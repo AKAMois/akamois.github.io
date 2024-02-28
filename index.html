@@ -20,7 +20,9 @@
     </header>
    
     <div class="wrapper">
-
+        <span class="icon-close">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
         <div class="form-box Login">
 
             <h2>Login</h2>
@@ -29,7 +31,7 @@
                 <span class="icon">
                     <i class="fa-solid fa-envelope"></i>
                 </span>
-                <input type="email" required>
+                <input name="usuario" type="email" class="input" value=""required>
                 <label for="Email">Email</label>
             </div>
 
@@ -37,10 +39,9 @@
                 <span class="icon">
                     <i class="fa-solid fa-lock"></i>
                 </span>
-                <input type="password" required>
+                <input name="password" type="password" class="input" value="" required>
                 <label>Password</label>
             </div>
-            
             
             <div class="remember-forgot">
                 <label><input type="checkbox">Remember me</label>
@@ -54,7 +55,6 @@
             </div>
         </div>
     </div>
-
 </body>
 <script src="script.js"></script>
 </html>

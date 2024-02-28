@@ -158,14 +158,73 @@ padding: 0 35px 0 5px;
     font-size: 1em;
    color: white;
 }
+.btn:hover{
+    background: white;
+    color: rgba(215, 149, 145, 1);
+
+}
 .login-register{
     font-size: 15px;    
     color: white;
     font-weight: 500;
-    display: flex;
+    text-align: center;
 }
-
 .register-link{
     font-size: 15px;    
     color: white;
+}
+
+.login-register p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: rgba(215, 149, 145, 1);
+    box-shadow: 0 0 5px rgba(215, 149, 145, 1),
+                0 0 25px rgba(215, 149, 145, 1);
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.wrapper .icon-close i{
+    font-size: 24px;
+}
+
+.wrapper .icon-close:hover{
+    background: orangered;
+    color: white;
+    box-shadow: 0 0 5px orangered,
+                0 0 25px orangered;
+}
+.wrapper.active{
+    height: 620px;
+}
+
+.wrapper .form-box-login{
+    transition: transform .4s ease;
+    transform: translateX(0);
+}
+
+.wrapper .wrapper.active .form-box-login{
+    transition: 0.4s ease;
+    transform: translateX(-400px);
+    
+
+
+
 }
